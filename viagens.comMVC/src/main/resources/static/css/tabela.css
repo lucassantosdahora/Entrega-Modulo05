@@ -1,0 +1,83 @@
+@import url(/CSS/styles.css);
+
+.lista-destinos {
+    max-width: 100%;
+    background-color: var(--color-special);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow-x: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.table {
+    margin-top: 1rem;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+thead {
+    background-color: var(--color-other);
+    color: #fff;
+}
+
+td,
+th {
+    padding: 10px;
+    border: 1px solid var(--color-other);
+    color: var(--color-secundaria);
+}
+
+.btn-container {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+th,
+td {
+    text-align: left;
+    word-wrap: break-word;
+}
+
+@media (max-width: 540px) {
+    .lista-destinos {
+        padding: 10px;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 5px;
+    }
+
+    .btn-container {
+        flex-direction: column;
+    }
+
+    .btn {
+        padding: 5px 10px;
+        margin-top: 5px;
+    }
+}

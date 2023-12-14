@@ -1,0 +1,41 @@
+/* Footer geral */
+footer {
+  background-image: url(/IMG/footer/img-footer.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.footer-suspenso {
+  background-color: rgba(240, 248, 255, 0.64);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-suspenso img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.contatos {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+@media only screen and (max-width: 768px) {
+  footer {
+    min-height: auto;
+  }
+}

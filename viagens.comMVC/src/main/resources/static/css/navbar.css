@@ -1,0 +1,103 @@
+@import url(/CSS/styles.css);
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--color-ligh);
+    display: block;
+    transition: 0.3s;
+}
+
+#sidebar a:hover {
+    color: var(--color-ligh);
+}
+
+#sidebar .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.navbar-custom {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--color-special);
+    transition: background-color 0.5s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+    color: var(--color-light);
+    font-size: 20px;
+    padding: 40px 20px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.5s, border-bottom 0.5s;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    font-weight: bold;
+    color: var(--color-other);
+    font-size: larger;
+    border-bottom: 2px solid var(--color-other);
+    transform: scaleY(1.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-custom .navbar-toggler {
+    background-color: var(--color-other);
+    border-color: var(--color-light);
+}
+
+
+.navbar-custom .navbar-toggler:active,
+.navbar-custom .navbar-toggler:focus {
+    background-color: var(--color-special);
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url('/IMG/icons/icons8-lupa.svg');
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (max-height: 450px) {
+    #sidebar {
+        padding-top: 15px;
+    }
+
+    #sidebar a {
+        font-size: 18px;
+    }
+
+    .navbar-custom {
+        position: static;
+    }
+
+}
